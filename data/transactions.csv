@@ -1,0 +1,21 @@
+transaction_id,account_id,transaction_date,transaction_type,amount,description
+5001,1001,2024-01-05,Deposit,5000.00,Salary deposit
+5002,1001,2024-01-08,Withdrawal,450.00,ATM withdrawal
+5003,1002,2024-01-12,Deposit,2500.00,Monthly savings
+5004,1003,2024-02-03,Deposit,3200.00,Salary deposit
+5005,1003,2024-02-07,Payment,850.00,Utility payment
+5006,1004,2024-02-15,Deposit,1500.00,Savings contribution
+5007,1005,2024-03-02,Withdrawal,300.00,ATM withdrawal
+5008,1006,2024-03-10,Deposit,7500.00,Investment income
+5009,1007,2024-03-18,Payment,420.50,Credit card payment
+5010,1008,2024-04-01,Deposit,4000.00,Salary deposit
+5011,1009,2024-04-09,Withdrawal,600.00,ATM withdrawal
+5012,1010,2024-04-15,Deposit,3000.00,Monthly savings
+5013,1011,2024-05-03,Payment,275.75,Utility payment
+5014,1012,2024-05-11,Deposit,2200.00,Salary deposit
+5015,1001,2024-05-20,Payment,1250.00,Mortgage payment
+5016,1003,2024-06-04,Withdrawal,500.00,ATM withdrawal
+5017,1006,2024-06-12,Deposit,6200.00,Investment income
+5018,1008,2024-06-21,Payment,950.00,Insurance payment
+5019,1009,2024-07-05,Deposit,2800.00,Salary deposit
+5020,1011,2024-07-14,Withdrawal,350.00,ATM withdrawal
