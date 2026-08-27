@@ -1,1 +1,28 @@
+-- Banking Financial Data Warehouse
+-- Loan sample data
 
+INSERT INTO loans (
+    loan_id,
+    customer_id,
+    loan_type,
+    loan_amount,
+    interest_rate,
+    loan_status,
+    issue_date
+)
+VALUES
+    (3001, 2001, 'Mortgage',       250000.00, 4.25, 'Active',    '2022-03-15'),
+    (3002, 2002, 'Personal Loan',   15000.00, 7.50, 'Active',    '2023-01-20'),
+    (3003, 2003, 'Auto Loan',       32000.00, 5.75, 'Active',    '2023-04-10'),
+    (3004, 2004, 'Mortgage',       310000.00, 4.10, 'Active',    '2021-11-05'),
+    (3005, 2005, 'Personal Loan',   10000.00, 8.25, 'Paid Off',  '2020-06-18'),
+    (3006, 2006, 'Business Loan',  125000.00, 6.50, 'Active',    '2022-09-12'),
+    (3007, 2007, 'Auto Loan',       28000.00, 6.25, 'Active',    '2024-02-01'),
+    (3008, 2008, 'Mortgage',       225000.00, 4.50, 'Active',    '2023-07-22'),
+    (3009, 2009, 'Personal Loan',   18000.00, 9.00, 'Defaulted', '2021-05-14'),
+    (3010, 2010, 'Business Loan',   85000.00, 7.25, 'Active',    '2022-12-08'),
+    (3011, 2011, 'Auto Loan',       35000.00, 5.90, 'Active',    '2024-03-17'),
+    (3012, 2012, 'Personal Loan',   12000.00, 8.75, 'Paid Off',  '2020-10-25'),
+    (3013, 2001, 'Personal Loan',   20000.00, 7.80, 'Active',    '2024-01-10'),
+    (3014, 2003, 'Mortgage',       275000.00, 4.35, 'Active',    '2022-08-30'),
+    (3015, 2006, 'Auto Loan',       30000.00, 6.10, 'Active',    '2023-09-05');
