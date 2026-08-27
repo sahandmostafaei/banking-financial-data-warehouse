@@ -1,0 +1,7 @@
+# Project 4: Banking Financial Data Warehouse
+#
+# The current ingestion and validation pipeline
+# uses only Python standard-library modules.
+#
+# PostgreSQL connectivity and analytical dependencies
+# will be added in later stages if required.
