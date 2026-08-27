@@ -1,1 +1,25 @@
+-- Banking Financial Data Warehouse
+-- Account sample data
 
+INSERT INTO accounts (
+    account_id,
+    customer_id,
+    account_type,
+    currency,
+    balance,
+    status,
+    opened_date
+)
+VALUES
+    (1001, 1, 'Checking', 'USD', 12500.50, 'Active', '2021-03-15'),
+    (1002, 1, 'Savings',  'USD', 45000.00, 'Active', '2021-03-15'),
+    (1003, 2, 'Checking', 'USD', 8200.75,  'Active', '2022-07-10'),
+    (1004, 2, 'Savings',  'USD', 21500.00, 'Active', '2022-07-10'),
+    (1005, 3, 'Checking', 'USD', 3400.25,  'Active', '2020-11-21'),
+    (1006, 4, 'Savings',  'USD', 67500.00, 'Active', '2019-05-03'),
+    (1007, 5, 'Checking', 'USD', 15800.40, 'Active', '2023-01-18'),
+    (1008, 6, 'Savings',  'USD', 32000.00, 'Active', '2021-09-27'),
+    (1009, 7, 'Checking', 'USD', 5600.90,  'Active', '2022-04-12'),
+    (1010, 8, 'Savings',  'USD', 48500.00, 'Active', '2020-08-30'),
+    (1011, 9, 'Checking', 'USD', 9100.10,  'Active', '2023-06-14'),
+    (1012, 10, 'Savings', 'USD', 27500.00, 'Active', '2021-12-05');
