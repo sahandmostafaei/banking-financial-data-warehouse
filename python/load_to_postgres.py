@@ -6,16 +6,20 @@ Author: Sahand Mostafaei
 """
 
 import os
+import sys
 from pathlib import Path
 
 import psycopg2
 from psycopg2.extras import execute_values
 
-from data_ingestion import read_csv_file
-
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-SQL_DIR = PROJECT_ROOT / "sql"
+DATA_DIR = PROJECT_ROOT / "data"
+
+# Allow imports when the script is executed directly.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from data_ingestion import read_csv_file
 
 
 def get_connection():
@@ -170,25 +174,35 @@ def main():
     connection = None
 
     try:
-        connection = get_connection()
+        print("Connecting to PostgreSQL...")
 
+        connection = get_connection()
         cursor = connection.cursor()
 
+        print("Loading customers...")
         load_customers(cursor)
+
+        print("Loading accounts...")
         load_accounts(cursor)
+
+        print("Loading transactions...")
         load_transactions(cursor)
+
+        print("Loading loans...")
         load_loans(cursor)
 
         connection.commit()
 
-        print("Banking datasets loaded successfully.")
+        cursor.close()
+
+        print("\nBanking datasets loaded successfully.")
 
     except Exception as error:
 
         if connection:
             connection.rollback()
 
-        print(f"Database loading failed: {error}")
+        print(f"\nDatabase loading failed: {error}")
         raise
 
     finally:
