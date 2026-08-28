@@ -1,38 +1,45 @@
-# Project Methodology
+# Banking Financial Data Warehouse & Risk Analytics
 
-## 1. Overview
+An end-to-end banking data engineering and financial analytics project built with **Python, PostgreSQL, and SQL**.
 
-The Banking Financial Data Warehouse is a synthetic banking analytics project designed to demonstrate the integration of SQL, PostgreSQL, Python, data-quality validation, and reproducible analytical workflows.
+The project demonstrates how banking data can be ingested from structured source files, validated, loaded into a relational database, analyzed with SQL, and transformed into financial and credit-risk KPIs.
 
-The project models four core banking entities:
-
-- Customers
-- Accounts
-- Transactions
-- Loans
-
-The system supports customer-level, account-level, transaction-level, and credit-risk analysis.
+> **Data:** Fully synthetic. No real customer or financial information is used.
 
 ---
 
-## 2. Architecture
+## Project Highlights
 
-The project follows a simple analytical data pipeline:
+- PostgreSQL relational database design
+- Python data ingestion pipeline
+- Automated source-data quality validation
+- SQL database-quality checks
+- Automated PostgreSQL loading
+- Database verification
+- Banking financial KPI reporting
+- Credit-risk and loan portfolio analytics
+- Automated Python testing with pytest
+- Environment-based database configuration
+- Reproducible pipeline structure
+
+---
+
+## Architecture
 
 ```text
-Synthetic CSV Data
-       |
-       v
-Python Ingestion
-       |
-       v
-Data Quality Validation
-       |
-       v
-PostgreSQL Relational Database
-       |
-       v
-SQL Analytics
-       |
-       v
-Financial KPIs and Risk Metrics
+Synthetic Banking Data
+          │
+          ▼
+   Python Ingestion
+          │
+          ▼
+ Data Quality Checks
+          │
+          ▼
+      PostgreSQL
+          │
+          ▼
+    SQL Analytics
+          │
+          ▼
+ Financial & Risk KPIs
