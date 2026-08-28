@@ -1,3 +1,5 @@
-# Project 4: Banking Financial Data Warehouse
+# Banking Financial Data Warehouse
+# Python dependencies
 
 psycopg2-binary>=2.9,<3.0
+pytest>=8.0,<9.0
